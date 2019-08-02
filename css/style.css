@@ -1,0 +1,459 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Miriam Libre', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+#logo span {
+    color: #E74430;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+header  {
+    border: solid 1px #eee;
+}
+
+
+
+header nav .grid-3 {
+    grid-template-columns: 200px .5fr 1fr;
+}
+
+header nav #search {
+    align-self: center;
+    border-left: solid 1px #eee;
+    border-right: solid 1px #eee;
+    height: 170%;
+    display: flex;
+    align-items: center;
+}
+
+header nav #search input {
+    width: 100%;
+    border: none;
+}
+
+header nav .unordered--list--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav .unordered--list--container .unordered--list--item {
+    position: relative;
+}
+
+header nav .unordered--list--container .unordered--list--item::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 2px;
+    transition: all .3s linear;
+}
+
+header nav .unordered--list--container .unordered--list--item:hover a {
+    color: #E74430;
+}
+
+header nav .unordered--list--container .unordered--list--item:hover::before {
+    background: #E74430;
+    opacity: 1;
+}
+
+header #sidenav {
+    height: 100%;
+    position: fixed;
+    background: #DC5A56;
+    top: 0;
+    left: -1000px;
+    width: 0;
+    overflow: hidden;
+}
+
+header #sidenav span.closeBtn {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+
+footer .unordered--list--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* SECTION - 1 */
+
+.section--1 {
+    height: auto;
+}
+
+.section--1 .whats-new  .horizonal-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section--1 .whats-new .horizonal-bar hr {
+    flex: 1;
+    background: #dedbdb;
+    height: 1px;
+    border: none;
+}
+
+.section--1 .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 34px;
+}
+
+
+/* TRIAL AND ERROR HAPPEND HERE */
+
+.section--1 .custom--container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section--1 .custom--card {
+    border: solid 2px #eee;
+    transition: all .2s linear;
+}
+
+.section--1 .custom--card .custom--card--heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section--1 .custom--card .custom--card--heading h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+
+.section--1 .custom--card .custom--card--content {
+    line-height: 1.7;
+}
+
+.section--1 .custom--card .custom--card--content p {
+    font-size: 1.1rem;
+}
+
+
+.section--1 .custom--card:hover {
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.055);
+    border: solid 2px transparent;
+}
+
+
+/* SECTION - 2 */
+
+.section--2 .custom--container {
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.section--2 .inner-box p {
+    line-height: 1.5;
+    font-size: .8rem;
+}
+
+.section--2 .inner-box {
+    border-bottom: solid 1px #eee;
+}
+
+.section--2 .inner-box .right--part {
+    position: relative;
+}
+
+.section--2 .inner-box .right--part img {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    bottom: 0px;
+}
+
+.section--2 .box--2 .left--part {
+    position: relative;
+}
+
+.section--2 .box--2 .left--part img {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    bottom: 0px;
+}
+
+.section--2 .box--3 .right--part  img{
+    top: 10px;
+}
+
+/* SECTION - 3 */
+
+.section--3 .inner-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.section--3 .custom--container {
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+
+.section--3 .grid-3 {
+    grid-column-gap: 30px;
+}
+
+.section--3 .box-1 .custom--heading,
+.section--3 .box-3 .custom--heading  {
+    background: #DC5A56;
+}
+
+.section--3 .box-2 .custom--heading {
+    background: #23A297;
+}
+
+.section--3 .horizonal-bar {
+    display: flex;
+    align-items: center;
+}
+
+.section--3 .horizonal-bar hr {
+    flex: 1;
+    background: #dedbdb;
+    height: 1px;
+    border: none;
+}
+
+
+
+.section--3 .box-1 .custom--heading,
+.section--3 .box-2 .custom--heading,
+.section--3 .box-3 .custom--heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section--3 .box-1 p,
+.section--3 .box-2 p,
+.section--3 .box-3 p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.section--3 .laravel--image {
+    position: relative;
+    z-index: -999;
+    top: -41px;
+}
+
+
+/* SECTION - 4  */
+
+.section--4 .custom--container {
+    padding: 0px 40px;
+}
+
+.section--4 .custom--container .outer-box-1 .inner-box .custom--heading,
+.section--4 .custom--container .outer-box-2 .inner-box .custom--heading,
+.section--4 .custom--container .outer-box-3 .inner-box .custom--heading,
+.section--4 .custom--container .outer-box-4 .inner-box .custom--heading {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.section--4 .outer-box-1 {
+    border-right: solid 2px #eee;
+}
+
+.section--4 .outer-box-3 {
+    border-left: solid 2px #eee;
+}
+
+
+/* FOOTER */
+
+footer .custom--container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 800px;
+}
+
+footer p > svg:hover {
+    fill: red;
+}
+
+
+
+/* RESPONSIVE CODE */
+
+@media(max-width: 1098px) {
+    .unordered--list--container {
+        display: none !important;
+    }
+
+    header .grid-3 {
+        grid-template-columns: 200px .9fr 30px !important;
+    }
+
+    .toggle-btn {
+       display: flex;
+       align-items: center;
+    }
+
+    .toggle-btn a {
+        display: block;
+        margin-left: 55px;
+    }
+
+    header #sidenav {
+        height: 100%;
+        position: fixed;
+        background: #DC5A56;
+        top: 0;
+        left: -1000px;
+        width: 0;
+        overflow: hidden;
+    }
+
+    header #sidenav .closeBtn {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+   
+    .section--1 .custom--card .custom--card--heading h3 {
+        font-size: 1rem;
+    }
+
+    .section--1 .custom--card .custom--card--content p {
+        font-size: .9rem;
+    }
+
+}
+
+
+@media(max-width: 978px) {
+    /* .section--1 .custom--card--heading,
+    .section--3 .custom--heading {
+        flex-direction: column;
+    } */
+
+    .section--1 .grid-3 {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .section--3 .grid-3,
+    .section--4 .grid-3 {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .section--4 .outer-box-1,
+    .section--4 .outer-box-2,
+    .section--4 .outer-box-3 {
+        border: none;
+    }
+
+    .section--3 .custom--heading {
+        justify-content: start;
+    }
+
+    .section--2 .inner-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+
+    header .grid-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    header #search {
+        display: none !important;
+    }
+
+    header .toggle-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    .section--2 .left-part h4,
+    .section--2 .right-part h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* MEDIA QUERY FOR MOBILE SCREEN SIZES AND SMALLER THEN THAT */
+
+@media(max-width: 420px) {
+    .display--4 {
+        font-size: 1rem important;
+    }
+    
+    .heading--secondary {
+        font-size: 1rem;
+    }
+
+    .section--1 .custom--card .custom--card--heading h3 {
+        margin-bottom: 20px;
+    }
+
+    .section--1 .custom--card .custom--card--content p {
+        font-size: .8rem;
+        text-align: justify;
+    }
+
+    .section--1 .custom--card .custom--card--heading {
+        flex-direction: column;
+    }
+
+    .section--2  h3 {
+        font-size: .8rem; 
+    }
+
+    .section--3 .box-1 p, .section--3 .box-2 p, .section--3 .box-3 p {
+        font-size: .8rem;
+    }
+
+    .section--3 .box-1 h4 {
+        font-size: .9rem;
+    }
+
+    .section--4 .grid-3 p {
+        font-size: .8rem;
+    }
+    
+    footer p {
+        font-size: .6rem;
+    }
+}
